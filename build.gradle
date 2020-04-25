@@ -281,6 +281,7 @@ configure(allprojects) { project ->
 			maven { url "https://repo.spring.io/libs-spring-framework-build" }
 			maven { url "https://repo.spring.io/snapshot" }
 			maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" } // RSocket
+			maven { url "http://repo.springsource.org/plugins-release" }
 		}
 	}
 	configurations.all {
