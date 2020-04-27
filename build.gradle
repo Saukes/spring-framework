@@ -349,6 +349,11 @@ configure([rootProject] + javaProjects) { project ->
 		compileOnly("com.google.code.findbugs:jsr305")
 		testCompileOnly("com.google.code.findbugs:jsr305")
 		checkstyle("io.spring.javaformat:spring-javaformat-checkstyle:0.0.15")
+		compileOnly 'org.projectlombok:lombok:1.18.12'
+		annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+		testCompileOnly 'org.projectlombok:lombok:1.18.12'
+		testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
 	}
 
 	ext.javadocLinks = [
